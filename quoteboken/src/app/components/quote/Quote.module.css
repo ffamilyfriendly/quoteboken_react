@@ -1,0 +1,21 @@
+.main {
+    outline: 2px solid rgba(128, 128, 128, 0.16);
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.row {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timestamp {
+    color: gray;
+}
+
+.quoteList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}

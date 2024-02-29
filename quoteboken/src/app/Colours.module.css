@@ -1,0 +1,14 @@
+.primary {
+    --main: var(--primary);
+    --on-main: var(--on-primary);
+}
+
+.secondary {
+    --main: var(--secondary);
+    --on-main: var(--on-secondary);
+}
+
+.danger {
+    --main: var(--danger);
+    --on-main: var(--on-danger);
+}

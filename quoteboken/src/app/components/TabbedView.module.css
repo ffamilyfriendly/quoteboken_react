@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+}
+
+.nav {
+    display: inline-flex;
+    background-color: var(--surface);
+    border-radius: .5rem;
+    overflow: hidden;
+    top: -50%;
+    z-index: 8;
+}
+
+.tab {
+    transition: .3s;
+    padding: 0.5rem;
+    z-index: 8;
+}
+
+.selected {
+    background-color: var(--primary);
+}
+
+.content {
+    border-radius: .5rem;
+    outline: 2px solid rgba(128, 128, 128, 0.16);
+    padding: 0.2rem;
+
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}

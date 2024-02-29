@@ -1,0 +1,17 @@
+.table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tableHeader {
+    background-color: var(--primary);
+}
+
+.tableItem{
+
+}
+
+.tableItem:nth-child(even) {
+    background-color: var(--surface);
+}

@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --bg-colour: black;
+  --on-bg: white;
+
+  --surface: rgba(255, 255, 255, 0.089);
+
+  --primary: #ff1b6b;
+  --on-primary: white;
+
+  --secondary: #45caff;
+  --on-secondary: white;
+
+  --danger: red;
+  --on-danger: white;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-colour);
+  color: var(--on-bg);
+}
+
+.paddedContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+#homeButton {
+  z-index: 500;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+}
+
+.paddedContainer > main {
+  width: 100%;
+}
