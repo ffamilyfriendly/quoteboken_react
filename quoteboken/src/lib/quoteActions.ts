@@ -1,9 +1,9 @@
 "use server"
 
-import { ApiResponse } from "../../../shared/types";
+import { ApiResponse } from "@/types";
 import PDFParser from "pdf2json"
-import parseQuotes from "./quoteParser";
-import { db } from "./manager/db";
+import parseQuotes from "@/lib/quoteParser";
+import { db } from "@/lib/manager/db";
 import { Translate } from "@google-cloud/translate/build/src/v2" 
 import { sql } from "kysely";
 

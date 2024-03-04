@@ -12,7 +12,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "typeRoots": [ "../shared/types" ],
+    "typeRoots": [ "src/types" ],
     "plugins": [
       {
         "name": "next"

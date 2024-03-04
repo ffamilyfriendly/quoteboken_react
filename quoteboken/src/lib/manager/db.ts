@@ -12,7 +12,28 @@ export const db = new Kysely<Database>({
     dialect
 })
 
+async function ensureTables() {
+    console.log("ensuring tables exist!")
+    await db.schema.createTable("user")
+        .addColumn("id", "integer")
+        .addColumn("name", "text")
+        .addColumn("admin", "integer")
+        .addColumn("lastLogin", "integer")
+        .addColumn("password", "text")
+            .ifNotExists().execute()
+
+    await db.schema.createTable("quote")
+        .addColumn("id", "text")
+        .addColumn("text", "text")
+        .addColumn("author", "text")
+        .addColumn("authorPrefix", "text")
+        .addColumn("date", "integer")
+            .ifNotExists().execute()
+}
+
 async function ensureAdmin() {
+    await ensureTables()
+
     const adminUser = await db.selectFrom("user").where("name", "=", "admin").selectAll().executeTakeFirst()
     if(adminUser) return
 

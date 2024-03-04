@@ -1,7 +1,7 @@
 "use server"
 
 import { db } from "@/lib/manager/db"
-import { ApiResponse } from "../../../shared/types"
+import { ApiResponse } from "../types"
 import UserManager from "./manager/usermanager"
 import { cookies } from "next/headers"
 
